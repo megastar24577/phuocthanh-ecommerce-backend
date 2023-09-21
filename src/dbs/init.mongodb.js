@@ -2,10 +2,10 @@
 
 const mongoose = require('mongoose');
 const {
-  db: { host, port, name },
+  db: { username, password, dbname },
 } = require('../configs/config.mongodb');
 const { countConnect, checkOverLoad } = require('../helpers/check.connect');
-const connectionString = `mongodb+srv://${host}:${port}@${name}.vcrt83w.mongodb.net/`;
+const connectionString = `mongodb+srv://${username}:${password}@${dbname}.vcrt83w.mongodb.net/`;
 
 class Database {
   constructor() {

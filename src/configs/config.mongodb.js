@@ -5,9 +5,9 @@ const dev = {
     port: process.env.DEV_PORT,
   },
   db: {
-    host: process.env.MONGO_USERNAME_DEV,
-    port: process.env.MONGO_PASSWORD_DEV,
-    name: process.env.MONGO_DB_NAME_DEV,
+    username: process.env.MONGO_USERNAME_DEV,
+    password: process.env.MONGO_PASSWORD_DEV,
+    dbname: process.env.MONGO_DB_NAME_DEV,
   },
 };
 
@@ -16,9 +16,9 @@ const production = {
     port: process.env.PRO_PORT,
   },
   db: {
-    host: process.env.MONGO_USERNAME_PRO,
-    port: process.env.MONGO_PASSWORD_PRO,
-    name: process.env.MONGO_DB_NAME_PRO,
+    username: process.env.MONGO_USERNAME_PRO,
+    password: process.env.MONGO_PASSWORD_PRO,
+    dbname: process.env.MONGO_DB_NAME_PRO,
   },
 };
 
