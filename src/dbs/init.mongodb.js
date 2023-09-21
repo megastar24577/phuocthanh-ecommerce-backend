@@ -1,10 +1,10 @@
-"use strict";
+'use strict';
 
-const mongoose = require("mongoose");
+const mongoose = require('mongoose');
 const {
   db: { host, port, name },
-} = require("../configs/config.mongodb");
-const { countConnect, checkOverLoad } = require("../helpers/check.connect");
+} = require('../configs/config.mongodb');
+const { countConnect, checkOverLoad } = require('../helpers/check.connect');
 const connectionString = `mongodb+srv://${host}:${port}@${name}.vcrt83w.mongodb.net/`;
 
 class Database {
@@ -13,10 +13,10 @@ class Database {
   }
 
   //connect
-  connect(type = "mongodb") {
+  connect(type = 'mongodb') {
     if (1 === 1) {
-      mongoose.set("debug", true);
-      mongoose.set("debug", { color: true });
+      mongoose.set('debug', true);
+      mongoose.set('debug', { color: true });
     }
 
     mongoose

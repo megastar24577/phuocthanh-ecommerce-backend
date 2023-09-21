@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 const dev = {
   app: {
@@ -23,5 +23,5 @@ const production = {
 };
 
 const config = { dev, production };
-const env = process.env.NODE_ENV || "dev";
+const env = process.env.NODE_ENV || 'dev';
 module.exports = config[env];
